@@ -7,6 +7,7 @@ import PharmacyRegister from "./Pages/PharmacySignup";
 import Landing from "./Pages/landingPage";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
+import UserTable from "./Pages/Profile";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pharmacy-register" element={<PharmacyRegister />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/costumers" element={<UserTable />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
