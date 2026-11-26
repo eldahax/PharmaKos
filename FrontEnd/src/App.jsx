@@ -6,6 +6,7 @@ import PharmacyLogin from "./Pages/PharmacyLogin";
 import PharmacyRegister from "./Pages/PharmacySignup";
 import Landing from "./Pages/landingPage";
 import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 import Home from "./Pages/Home";
 import UserTable from "./Pages/Profile";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pharmacy-login" element={<PharmacyLogin />} />
         <Route path="/pharmacy-register" element={<PharmacyRegister />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route path="/costumers" element={<UserTable />} />
         <Route path="*" element={<Navigate to="/" replace />} />
